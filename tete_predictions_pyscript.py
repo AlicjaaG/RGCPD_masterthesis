@@ -12,8 +12,8 @@ from data_preparations import coordinates, data_steps, mean, xarray
 import func_models as fc_utils
 from pipeline import pipeline
 
-%load_ext autoreload
-%autoreload 2
+#%load_ext autoreload
+#%autoreload 2
 
 # main directory is the directory of this notebook
 main_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) 
