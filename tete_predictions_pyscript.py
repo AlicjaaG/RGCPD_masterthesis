@@ -16,14 +16,14 @@ from pipeline import pipeline
 #%autoreload 2
 
 # main directory is the directory of this notebook
-#main_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) 
+main_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) 
 
 # my main directory (which contains folders with data etc)
 #my_main_dir = 'C:\\Users\\alicj\\Desktop\\WORK'
 #data_path = os.path.join(my_main_dir, 'data')
 # import pre function from prediction.py script
 data_path = "/scistor/ivm/aga259/RGCPD_masterthesis/data_Ala"
-my_main_dir = "/scistor/ivm/aga259/RGCPD_masterthesis"
+#my_main_dir = "/scistor/ivm/aga259/RGCPD_masterthesis"
  
 
 # define parameters for all experiments
