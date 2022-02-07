@@ -1,6 +1,30 @@
 ############ IMPORTS HERE ############### remember to change data_path
+import pandas as pd
+import numpy as np
+import os, inspect
+from RGCPD import RGCPD
+from RGCPD import BivariateMI
+import class_BivariateMI, functions_pp
+from stat_models_cont import ScikitModel
+from sklearn.linear_model import Ridge
+from sklearn.linear_model import LogisticRegressionCV
+from data_preparations import coordinates, data_steps, mean, xarray
+import func_models as fc_utils
+from pipeline import pipeline
+
+%load_ext autoreload
+%autoreload 2
+
+# main directory is the directory of this notebook
+main_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) 
+
+# my main directory (which contains folders with data etc)
+my_main_dir = 'C:\\Users\\alicj\\Desktop\\WORK'
+data_path = os.path.join(my_main_dir, 'data')
 # import pre function from prediction.py script
-data_path = 
+data_path = "/scistor/ivm/aga259/RGCPD_masterthesis/data_Ala"
+my_main_dir = "/scistor/ivm/aga259/RGCPD_masterthesis"
+ 
 
 # define parameters for all experiments
 function = class_BivariateMI.corr_map
